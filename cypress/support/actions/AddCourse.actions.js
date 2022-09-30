@@ -1,4 +1,4 @@
-Cypress.Commands.add("AddCourses", () => {
+Cypress.Commands.add("addCourses", () => {
   const randomChar = (length) => {
     let result = "";
     const characters =
