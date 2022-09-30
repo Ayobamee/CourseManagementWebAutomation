@@ -18,9 +18,3 @@ Cypress.Commands.add("passwordField", () => {
 Cypress.Commands.add("loginBtn", () => {
   cy.get(".MuiButton-contained");
 });
-
-Cypress.Commands.add("checksuccessfulLoginMessage", () => {
-  cy.get(".Toastify__toast-body > :nth-child(2)");
-});
-
-
