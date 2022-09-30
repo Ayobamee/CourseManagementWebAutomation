@@ -3,6 +3,8 @@ Cypress.Commands.add("Login", () => {
   const password = Cypress.env("password");
   //Load test env
   cy.visit("/");
+  //change view port to macbook 16
+  cy.viewport(1536, 960);
 
   //Confirm site renders
   cy.assertAppLoads().should("be.visible");
