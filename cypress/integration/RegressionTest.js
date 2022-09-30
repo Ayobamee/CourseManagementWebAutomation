@@ -13,7 +13,7 @@ describe("Quales Course Management Regression Test suite", () => {
     });
 
     it("Validate that courses can be created successfully", () => {
-      //Test courses are are added.
+      //Test courses are added successfully.
       cy.addCourses({});
     });
   });
