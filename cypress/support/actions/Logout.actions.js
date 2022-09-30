@@ -4,4 +4,5 @@ Cypress.Commands.add("clickLogout", () => {
 
 Cypress.Commands.add("assertLoginPage", () => {
   cy.url().should("include", "/login");
+  cy.log("User is on login page");
 });

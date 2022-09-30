@@ -18,13 +18,12 @@
 //Import actions
 import "./actions/Login.actions";
 import "./actions/Logout.actions";
-import "./actions/ViewCourses.actions";
 import "./actions/AddCourse.actions";
 
 //Import components
 import "./components/Login.components";
 import "./components/Logout.components";
-import "./components/Courses.components";
+import "./components/Courses.components"
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')

@@ -22,3 +22,8 @@ Cypress.Commands.add("Login", () => {
   //click login
   cy.loginBtn().click();
 });
+
+Cypress.Commands.add("checkCoursesDisplay", () => {
+  cy.url().should("include", "/courses");
+  cy.log("User can view courses successfully");
+});
