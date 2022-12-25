@@ -20,7 +20,7 @@
   "author": "Ayobami",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^7.5.0",
+    "cypress": "^12.2.0",
     "mocha": "^9.0.2",
     "mochawesome": "^6.2.2"
   }
