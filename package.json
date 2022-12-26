@@ -1,7 +1,7 @@
 {
-  "name": "automationForQuales",
+  "name": "automationDesignForQuales",
   "version": "1.0.0",
-  "description": "End to End automated test for seamfix",
+  "description": "End to End automated",
   "main": "index.js",
   "scripts": {
     "test": "npx cypress run",
