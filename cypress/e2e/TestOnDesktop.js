@@ -1,13 +1,13 @@
 /// <reference types= "cypress" />
 
-describe("Quales Course Management Regression Test suite on PC", () => {
+describe("Quales Course Management Regression Test suite on Desktop", () => {
   beforeEach(() => {
     cy.log("Login to the app");
     //Login
     cy.Login({});
   });
 
-  context("In app tests on PC", () => {
+  context("In app tests on Desktop", () => {
     it("Validate that users with valid credentials can login to the app successfully", () => {
       cy.log("Test successful login");
       //Test successful login
@@ -21,7 +21,7 @@ describe("Quales Course Management Regression Test suite on PC", () => {
     });
   });
 
-  context("Tear Down", () => {
+  context("Tear Down tests on Desktop", () => {
     it("Validate that users can logout of the app successfully", () => {
       cy.log("Test logout");
       //Test successful logout

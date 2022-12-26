@@ -9,8 +9,8 @@
     "headTest": "npm test -- --headed",
     "chromeTest": "npm  test -- --browser chrome",
     "chromeHeadlessTest": "npm  test --headless --browser chrome",
-    "recordDashboardTest": "npm  test --  --record --key 28fef3d0-0b4a-4f5e-a9f7-dd3f847a8814 --reporter mochawesome",
-    "cypressReport": "npm run test -- --record --key 28fef3d0-0b4a-4f5e-a9f7-dd3f847a8814"
+    "recordDashboardTest": "npm  test --  --record --key 781adacf-be2f-4610-ac7d-2537a429f8b9 --reporter mochawesome",
+    "cloudTest": " npx cypress run --record --key 781adacf-be2f-4610-ac7d-2537a429f8b9"
   },
   "keywords": [
     "testing",

@@ -22,7 +22,7 @@ describe("Quales Course Management Regression Test suite on Mobile", () => {
     });
   });
 
-  context("Tear Down", () => {
+  context("Tear Down tests on Mobile", () => {
     it("Validate that users can logout of the app successfully", () => {
       cy.log("Test logout");
       //Test successful logout

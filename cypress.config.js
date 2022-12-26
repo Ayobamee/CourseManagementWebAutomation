@@ -2,8 +2,7 @@ const { defineConfig } = require("cypress");
 
 module.exports = defineConfig({
   chromeWebSecurity: false,
-  projectId: "w5b6zd",
-  reporter: "mochawesome",
+
   retries: {
     runMode: 2,
     openMode: 1,
@@ -22,12 +21,5 @@ module.exports = defineConfig({
     },
     baseUrl: "http://tawdry-rule.surge.sh/",
     specPattern: "cypress/e2e/**/*.{js,jsx,ts,tsx}",
-  },
-
-  scripts: {
-    test: "npx cypress run",
-    open: "npx cypress open",
-    cloudTest:
-      "npx cypress run --record --key 781adacf-be2f-4610-ac7d-2537a429f8b9",
   },
 });

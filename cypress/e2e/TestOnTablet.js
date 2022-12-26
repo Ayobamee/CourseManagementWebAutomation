@@ -1,6 +1,6 @@
 /// <reference types= "cypress" />
 
-describe("Quales Course Management Regression Test suite", () => {
+describe("Quales Course Management Regression Test suite on Tablet", () => {
   beforeEach(() => {
     cy.log("Login to the app");
     cy.viewport("ipad-2");
@@ -22,7 +22,7 @@ describe("Quales Course Management Regression Test suite", () => {
     });
   });
 
-  context("Tear Down", () => {
+  context("Tear Down on Tablet", () => {
     it("Validate that users can logout of the app successfully", () => {
       cy.log("Test logout");
       //Test successful logout
