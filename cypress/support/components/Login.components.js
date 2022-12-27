@@ -18,3 +18,15 @@ Cypress.Commands.add("passwordField", () => {
 Cypress.Commands.add("loginBtn", () => {
   cy.get(".MuiButton-contained");
 });
+
+Cypress.Commands.add("loginModal", () => {
+  cy.get(".css-1lvtzne > .MuiButtonBase-root");
+});
+
+Cypress.Commands.add("loginBtnMobile", () => {
+  cy.get('[tabindex="0"] > .MuiTypography-root')
+});
+
+Cypress.Commands.add("assertLoginMobile", () => {
+  cy.contains("Login")
+});

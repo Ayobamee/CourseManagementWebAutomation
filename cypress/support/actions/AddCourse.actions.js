@@ -1,19 +1,15 @@
-Cypress.Commands.add("addCourses", () => {
-  const randomChar = (length) => {
-    let result = "";
-    const characters =
-      "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
-    const charactersLength = characters.length;
-    for (let i = 0; i < length; i++) {
-      result += characters.charAt(Math.floor(Math.random() * charactersLength));
-    }
-    return result;
-  };
-  cy.addCourseBtn().click();
+const randomChar = (length) => {
+  let result = "";
+  const characters =
+    "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+  const charactersLength = characters.length;
+  for (let i = 0; i < length; i++) {
+    result += characters.charAt(Math.floor(Math.random() * charactersLength));
+  }
+  return result;
+};
 
-  //minimize left icon
-  cy.coursePageLeftIcon().click();
-
+Cypress.Commands.add("addCoursesAction", () => {
   //input test title
   cy.courseTitleInputField().type("Cypressweb automation" + randomChar(4));
 
@@ -40,4 +36,19 @@ Cypress.Commands.add("addCourses", () => {
   //Course created sourcefully slide show should be displayed
   cy.successfullyAddedCourseToast().should("be.visible");
   cy.log("A course has been created successfully");
+});
+
+Cypress.Commands.add("addCourses", () => {
+  cy.addCourseBtn().click();
+
+  //minimize left icon
+  cy.coursePageLeftIcon().click();
+
+  cy.addCoursesAction();
+});
+
+Cypress.Commands.add("addCoursesMobile_Tab", () => {
+  cy.addCourseBtn().click();
+
+  cy.addCoursesAction();
 });

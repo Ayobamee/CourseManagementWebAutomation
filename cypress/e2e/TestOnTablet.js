@@ -5,7 +5,7 @@ describe("Quales Course Management Regression Test suite on Tablet", () => {
     cy.log("Login to the app");
     cy.viewport("ipad-2");
     //Login
-    cy.Login({});
+    cy.LoginMobile_Tab({});
   });
 
   context("In app tests on Tablet", () => {
@@ -18,7 +18,7 @@ describe("Quales Course Management Regression Test suite on Tablet", () => {
     it("Validate that courses can be created successfully", () => {
       cy.log("Test add courses");
       //Test courses are added successfully.
-      cy.addCourses({});
+      cy.addCoursesMobile_Tab({});
     });
   });
 

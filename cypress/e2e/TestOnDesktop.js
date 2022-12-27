@@ -3,6 +3,8 @@
 describe("Quales Course Management Regression Test suite on Desktop", () => {
   beforeEach(() => {
     cy.log("Login to the app");
+    //change view port to macbook 16
+    cy.viewport("macbook-16");
     //Login
     cy.Login({});
   });
