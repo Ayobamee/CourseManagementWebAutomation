@@ -33,9 +33,7 @@ Cypress.Commands.add("addCoursesAction", () => {
   //click add course
   cy.secondAddCourseBtn().click();
 
-  //Course created sourcefully slide show should be displayed
-  cy.successfullyAddedCourseToast().should("be.visible");
-  cy.log("A course has been created successfully");
+ 
 });
 
 Cypress.Commands.add("addCourses", () => {

@@ -20,11 +20,16 @@ import "./actions/Login.actions";
 import "./actions/Logout.actions";
 import "./actions/AddCourse.actions";
 
-
 //Import components
 import "./components/Login.components";
 import "./components/Logout.components";
 import "./components/Courses.components";
+
+//Import assertions
+
+import "./assertions/AddCourse.assertions";
+import "./assertions/Teardown.assertions";
+import "./assertions/ViewCourse.assertions";
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')

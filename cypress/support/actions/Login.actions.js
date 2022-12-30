@@ -14,7 +14,7 @@ Cypress.Commands.add("performLoginActions", () => {
   cy.loginBtn().click();
 });
 
-Cypress.Commands.add("Login", () => {
+Cypress.Commands.add("Login_Desktop", () => {
   //Load test env
   cy.visitSite();
 
@@ -25,7 +25,7 @@ Cypress.Commands.add("Login", () => {
   cy.SignBtn().click();
 
   //assert login page
-  cy.assertLoginPage();
+  cy.assertLogout();
   //perform login
   cy.performLoginActions();
 });
@@ -48,9 +48,4 @@ Cypress.Commands.add("LoginMobile_Tab", () => {
   cy.assertLoginMobile().should("be.visible");
 
   cy.performLoginActions();
-});
-
-Cypress.Commands.add("checkCoursesDisplay", () => {
-  cy.url().should("include", "/courses");
-  cy.log("User can view courses successfully");
 });
