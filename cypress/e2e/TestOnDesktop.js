@@ -23,6 +23,14 @@ describe("Quales Course Management Regression Test suite on Desktop", () => {
       //Check course has been created
       cy.assertCourseCreation({});
     });
+
+    it("Validate that courses can be deleted successfully", () => {
+      cy.log("Test delete courses");
+      //Test courses are deleted successfully.
+      cy.deleteCourseAction({});
+      //Check course has been deleted
+      cy.assertDeleteCourse({});
+    });
   });
 
   context("Tear Down tests on Desktop", () => {
